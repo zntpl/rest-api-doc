@@ -1,0 +1,27 @@
+{
+	"name": "tpl/eloquent",
+	"description": "Web application",
+	"keywords": [
+		"application",
+		"web"
+	],
+	"type": "project",
+	"minimum-stability": "stable",
+	"require": {
+		"zndev/rest-api": "dev-master"
+	},
+	"config": {
+		"secure-http": false,
+		"process-timeout": 1800
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/zndev/rest-api.git"
+		}
+	]
+}
