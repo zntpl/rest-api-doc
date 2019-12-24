@@ -1,3 +1,3 @@
 cd ..
-raml2html "./api.raml" > "./dist/index.html"
+raml2html "./src/index.raml" > "./dist/index.html"
 pause
