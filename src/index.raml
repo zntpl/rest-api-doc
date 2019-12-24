@@ -33,3 +33,19 @@ traits:
 
 /auth: !include user/v1/auth/api.raml
 /registration: !include user/v1/registration/api.raml
+/restore-password: !include user/v1/restore-password/api.raml
+/security/password: !include user/v1/change-password/api.raml
+/security/email: !include user/v1/change-email/api.raml
+/person: !include user/v1/person/api.raml
+
+/settings: !include settings/v1/personal/api.raml
+/settings-system: !include settings/v1/system/api.raml
+
+/rbac-role: !include rbac/v1/rbac-role/api.raml
+/rbac-permission: !include rbac/v1/rbac-permission/api.raml
+/rbac-assignment: !include rbac/v1/rbac-assignment/api.raml
+
+#/file-storage: !include ../../../vendor/yii2rails/yii2-extension/yusrc/storage/src/api/docs/file-storage/api.raml
+/storage-personal: !include storage/v1/storage-personal/api.raml
+
+/notify-test: !include notify/v1/notify-test/api.raml
