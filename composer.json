@@ -8,7 +8,7 @@
 	"type": "project",
 	"minimum-stability": "stable",
 	"require": {
-		"zndev/rest-api": "dev-master"
+		"zndev/rest-api": "v0.0.1"
 	},
 	"config": {
 		"secure-http": false,
