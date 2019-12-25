@@ -15,7 +15,7 @@
 * Пользовательское хранилище файлов
 * Уведомления для тестов (читать СМСки на тестовом)
 
-Так же, содержит контракты, описанные [тут](https://github.com/phpbundle/rest/blob/master/guide/ru/README.md).
+Так же, содержит контракты, описанные [тут](https://github.com/zndoc/team/blob/master/rest-api/README.md).
 
 ## Ссылки
 
