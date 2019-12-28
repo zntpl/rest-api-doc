@@ -9,14 +9,14 @@
 * Восстановление пароля
 * Изменение пароля
 * Изменения почты
-* Данные персоны
+* Персональные данные
 * Настройки агента (язык, уведомления)
-* Роли полномочия
+* Роли и полномочия
 * Пользовательское хранилище файлов
 * Уведомления для тестов (читать СМСки на тестовом)
 
-Так же, содержит контракты, описанные [тут](https://github.com/zndoc/team/blob/master/rest-api/README.md).
+Так же, содержит контракты, описанные [тут](https://github.com/zndoc/rest-api/blob/master/docs/contract/README.md).
 
 ## Ссылки
 
-* [Документация](https://github.com/zndev/rest-api/blob/master/docs/README.md)
+* [Документация](https://github.com/zndoc/rest-api/blob/master/README.md)
