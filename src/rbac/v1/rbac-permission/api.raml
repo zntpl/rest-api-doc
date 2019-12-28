@@ -1,7 +1,7 @@
 description: "RBAC. Полномочия"
 get:
     description: "Получть список полномочий"
-    is: !include ../../../../vendor/zndev/rest-api/src/is/all.raml
+    is: !include ../../../../vendor/zndoc/rest-api/src/is/all.raml
     responses:
         200:
             body:
@@ -10,7 +10,7 @@ get:
 post:
     securedBy: [Auth]
     description: "Создать полномочие"
-    is: !include ../../../../vendor/zndev/rest-api/src/is/create.raml
+    is: !include ../../../../vendor/zndoc/rest-api/src/is/create.raml
     body:
         application/json:
             example: !include example/create-request-body.json
@@ -22,7 +22,7 @@ post:
             type: string
     get:
         description: "Получить полномочие"
-        is: !include ../../../../vendor/zndev/rest-api/src/is/one.raml
+        is: !include ../../../../vendor/zndoc/rest-api/src/is/one.raml
         responses:
             200:
                 body:
@@ -31,11 +31,11 @@ post:
     put:
         securedBy: [Auth]
         description: "Изменить полномочие"
-        is: !include ../../../../vendor/zndev/rest-api/src/is/update.raml
+        is: !include ../../../../vendor/zndoc/rest-api/src/is/update.raml
         body:
             application/json:
                 example: !include example/update-request-body.json
     delete:
         securedBy: [Auth]
         description: "Удалить полномочие"
-        is: !include ../../../../vendor/zndev/rest-api/src/is/delete.raml
+        is: !include ../../../../vendor/zndoc/rest-api/src/is/delete.raml

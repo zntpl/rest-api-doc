@@ -1,7 +1,7 @@
 description: "Файловое хранилище"
 get:
     description: "Получть список файлов"
-    is: !include ../../../../vendor/zndev/rest-api/src/is/all.raml
+    is: !include ../../../../vendor/zndoc/rest-api/src/is/all.raml
     responses:
         200:
             body:
@@ -10,7 +10,7 @@ get:
 post:
     securedBy: [Auth]
     description: "Загрузить файл на сервер"
-    is: !include ../../../../vendor/zndev/rest-api/src/is/create.raml
+    is: !include ../../../../vendor/zndoc/rest-api/src/is/create.raml
     body:
         multipart/form-data:
             properties:
@@ -29,7 +29,7 @@ post:
             type: integer
     get:
         description: "Получить файл"
-        is: !include ../../../../vendor/zndev/rest-api/src/is/one.raml
+        is: !include ../../../../vendor/zndoc/rest-api/src/is/one.raml
         responses:
             200:
                 body:
@@ -38,11 +38,11 @@ post:
     put:
         securedBy: [Auth]
         description: "Изменить файл"
-        is: !include ../../../../vendor/zndev/rest-api/src/is/update.raml
+        is: !include ../../../../vendor/zndoc/rest-api/src/is/update.raml
         body:
             application/json:
                 example: !include example/update-request-body.json
     delete:
         securedBy: [Auth]
         description: "Удалить файл"
-        is: !include ../../../../vendor/zndev/rest-api/src/is/delete.raml
+        is: !include ../../../../vendor/zndoc/rest-api/src/is/delete.raml

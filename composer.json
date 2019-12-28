@@ -8,7 +8,7 @@
 	"type": "project",
 	"minimum-stability": "stable",
 	"require": {
-		"zndev/rest-api": "v0.0.1"
+		"zndoc/rest-api": "dev-master"
 	},
 	"config": {
 		"secure-http": false,
@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "git",
-			"url": "https://github.com/zndev/rest-api.git"
+			"url": "https://github.com/zndoc/rest-api.git"
 		}
 	]
 }

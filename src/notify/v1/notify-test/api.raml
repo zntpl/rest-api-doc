@@ -6,7 +6,7 @@ get:
             description: "Тип уведомления (sms, email)"
             type: string
     description: "Получить список уведомлений"
-    is: !include ../../../../vendor/zndev/rest-api/src/is/all.raml
+    is: !include ../../../../vendor/zndoc/rest-api/src/is/all.raml
     responses:
         200:
             body:
@@ -15,4 +15,4 @@ get:
 delete:
     securedBy: [Auth]
     description: "Очистить уведомления"
-    is: !include ../../../../vendor/zndev/rest-api/src/is/delete.raml
+    is: !include ../../../../vendor/zndoc/rest-api/src/is/delete.raml
