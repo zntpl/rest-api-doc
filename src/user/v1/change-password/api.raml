@@ -1,6 +1,6 @@
 description: "Изменить пароль"
 put:
-    securedBy: [Auth]
+    securedBy: [bearerAuth]
     description: "Изменить пароль"
     is: !include ../../../../vendor/zndoc/rest-api/src/is/update.raml
     body:

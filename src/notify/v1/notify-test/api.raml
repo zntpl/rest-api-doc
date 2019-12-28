@@ -1,6 +1,6 @@
 description: "Уведомления для тестировщиков"
 get:
-    securedBy: [Auth]
+    securedBy: [bearerAuth]
     queryParameters:
         type:
             description: "Тип уведомления (sms, email)"
@@ -13,6 +13,6 @@ get:
                 application/json:
                     example: !include example/all-response-body.json
 delete:
-    securedBy: [Auth]
+    securedBy: [bearerAuth]
     description: "Очистить уведомления"
     is: !include ../../../../vendor/zndoc/rest-api/src/is/delete.raml

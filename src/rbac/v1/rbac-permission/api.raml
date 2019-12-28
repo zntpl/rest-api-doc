@@ -8,7 +8,7 @@ get:
                 application/json:
                     example: !include example/all-response-body.json
 post:
-    securedBy: [Auth]
+    securedBy: [bearerAuth]
     description: "Создать полномочие"
     is: !include ../../../../vendor/zndoc/rest-api/src/is/create.raml
     body:
@@ -29,13 +29,13 @@ post:
                     application/json:
                         example: !include example/one-response-body.json
     put:
-        securedBy: [Auth]
+        securedBy: [bearerAuth]
         description: "Изменить полномочие"
         is: !include ../../../../vendor/zndoc/rest-api/src/is/update.raml
         body:
             application/json:
                 example: !include example/update-request-body.json
     delete:
-        securedBy: [Auth]
+        securedBy: [bearerAuth]
         description: "Удалить полномочие"
         is: !include ../../../../vendor/zndoc/rest-api/src/is/delete.raml

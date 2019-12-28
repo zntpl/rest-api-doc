@@ -1,6 +1,6 @@
 description: "Персона"
 get:
-    securedBy: [Auth]
+    securedBy: [bearerAuth]
     description: "Получить данные о своей персоне"
     is: !include ../../../../vendor/zndoc/rest-api/src/is/one.raml
     responses:
@@ -9,7 +9,7 @@ get:
                 application/json:
                     example: !include example/one-response-body.json
 put:
-    securedBy: [Auth]
+    securedBy: [bearerAuth]
     description: "Изменить данные о своей персоне"
     is: !include ../../../../vendor/zndoc/rest-api/src/is/update.raml
     body:

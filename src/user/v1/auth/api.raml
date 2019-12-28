@@ -12,13 +12,13 @@ post:
                 application/json:
                     example: !include example/post-response-body.json
             headers:
-                    Authorization:
-                        description: Токен авторизации
-                        type: string
-                        example: "c0bec554c5dda6a9cefc06dd6d65d3de"
+                Authorization:
+                    description: Токен авторизации
+                    type: string
+                    example: "bearer ucboG8yfWKsd7DljVHHJjGMl3t6UZAL0"
 
 get:
-    securedBy: [Auth]
+    securedBy: [bearerAuth]
     description: Получение информации текущего пользователя
     is: !include ../../../../vendor/zndoc/rest-api/src/is/simple/one.raml
     responses:

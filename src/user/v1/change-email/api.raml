@@ -1,6 +1,6 @@
 description: "Изменить почту"
 put:
-    securedBy: [Auth]
+    securedBy: [bearerAuth]
     description: "Изменить почту"
     is: !include ../../../../vendor/zndoc/rest-api/src/is/update.raml
     body:
