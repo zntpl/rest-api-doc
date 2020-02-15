@@ -4,9 +4,8 @@ version: v1
 protocols: [ HTTP, HTTPS ]
 baseUri: http://api.example.com/v1
 mediaType: [ application/json ]
-securitySchemes:
-  Auth: !include ../vendor/zndev/rest-api/src/securitySchemes/base.raml
-traits: !include ../vendor/zndev/rest-api/src/traits/index.raml
+securitySchemes: !include ../vendor/zndoc/rest-api/src/securitySchemes/index.raml
+traits: !include ../vendor/zndoc/rest-api/src/traits/index.raml
 
 /auth: !include user/v1/auth/api.raml
 /registration: !include user/v1/registration/api.raml
